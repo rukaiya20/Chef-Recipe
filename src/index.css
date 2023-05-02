@@ -10,15 +10,11 @@
 
 .header{
     padding: 1rem 7%;
-    /* position: fixed; */
     left: 0;
     right: 0;
     align-items: center;
     z-index: 100;
     background: #1d1d23;
-}
-.logo img{
-    /* width: 120px; */
 }
 .navbar a{
     color: white;
@@ -29,11 +25,11 @@
 .navbar a:hover{
     color:rgb(255, 158, 97);
 }
-.icons div:hover{
+.btn div:hover{
     cursor: pointer;
 }
 
-.icons a{
+.btn a{
     color: white;
     padding: 0.6rem 1.5rem;
     border: 1px solid orange;
@@ -41,6 +37,8 @@
     font-size: 18px;
     transition: 0.5s;
     display: inline-block;
+    font-weight: 500;
+
 }
 .login-btn:hover{
     transform: scale(1.1);
