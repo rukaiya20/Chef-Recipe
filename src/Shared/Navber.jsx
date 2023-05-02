@@ -16,7 +16,7 @@ const Navber = () => {
              <div className={`md:flex lg:justify-between absolute duration-500 md:static ${IsOpen ? 'top-6' : '-top-48'} sm:ms-5 `}>
              <div className="logo text-yellow-500 font-extrabold text-3xl">
             <p>Spice Journey</p>
-            </div>
+            </div> 
 
         <nav className="navbar mt-1">
     
