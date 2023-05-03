@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^1.4.2",
+    "@mui/material": "^5.12.3",
+    "@mui/styled-engine-sc": "^5.12.0",
     "cors": "^2.8.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
@@ -22,7 +24,8 @@
     "react-pdf": "^6.2.2",
     "react-rating": "^2.0.5",
     "react-router-dom": "^6.11.0",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
