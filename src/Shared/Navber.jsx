@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import {GrClose } from "react-icons/gr";
 import '../../src/index.css'
-import logo from '../assets/logo.png'
+
 
 const Navber = () => {
     const [IsOpen,setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navber = () => {
         <nav className="navbar mt-1">
     
             <Link to='/'>Home</Link>
-            <Link to='/Blog'>Blog</Link>
+            <Link to='/blog'>Blog</Link>
         </nav>
 
         <div className="btn mt-1">

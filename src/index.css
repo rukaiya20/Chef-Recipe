@@ -44,3 +44,55 @@
     transform: scale(1.1);
     background: rgb(255, 158, 97);
 }
+
+.home{
+    padding: 1rem 7%;
+    background: url(assets/background.jpg);
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-home{
+    align-items: center;
+    gap: 15px;
+    padding-top: 150px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.home-inner-content{
+    flex: 1 1 45rem;
+}
+.home-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.home-image img{
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, -40%);
+    animation: mymove 5s infinite ease-in-out;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%   {top: 15px;}
+    75%   {top: 10px;}
+    100%   {top: 0px;}
+  }
+.home-text-content a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 18px;
+   transition: 0.5s;
+   display: inline-block;
+}
+.home-text-content a:hover{
+    transform: scale(1.1);
+    background: rgb(244, 140, 13);
+    border: 1px solid white;
+}
