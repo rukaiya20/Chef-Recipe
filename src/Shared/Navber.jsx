@@ -28,6 +28,7 @@ const Navber = () => {
             <Link className="login-btn" to="/login">Login</Link>
         </div>
         </div>
+           
         </div>
         
     );
