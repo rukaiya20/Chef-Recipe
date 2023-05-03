@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
+    "cors": "^2.8.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "localforage": "^1.10.0",

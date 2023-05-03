@@ -1,8 +1,6 @@
 import React from 'react';
 import backgroundContent from '../../assets/backgroundContent.png'
-import {FaArrowDown } from "react-icons/fa";
-
-
+import ChefCard from './Cards/ChefCard';
 
 const Banner = () => {
     return (
@@ -26,6 +24,7 @@ const Banner = () => {
               
           </div> 
           </div>
+          <ChefCard></ChefCard>
         </>
 
 
