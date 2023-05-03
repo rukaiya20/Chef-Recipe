@@ -25,7 +25,7 @@ const Navber = () => {
         </nav>
 
         <div className="btn mt-1">
-            <a className="login-btn" href="#">Login</a>
+            <Link className="login-btn" to="/login">Login</Link>
         </div>
         </div>
         </div>
