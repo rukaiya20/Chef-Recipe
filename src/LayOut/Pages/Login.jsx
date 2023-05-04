@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import { useContext } from 'react';
@@ -8,6 +8,9 @@ import { AuthContext } from '../../Provider/AuthProvider';
 const Login = () => {
     const [error,setError] = useState();
     const{signIn} =useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const From = location.state?.from?.pathname || '/'
     const handleLogin = event =>{
         event.preventDefault();
         const from = event.target;
@@ -18,6 +21,7 @@ const Login = () => {
         .then(Result =>{
             const createUser = Result.user;
             console.log(createUser);
+            navigate(From, {replace: true})
         })
         .catch(error =>{
             setError(error.message)

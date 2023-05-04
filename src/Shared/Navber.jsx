@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import {GrClose } from "react-icons/gr";
+import { FaUserCircle } from 'react-icons/fa';
 import '../../src/index.css'
+import { AuthContext } from '../Provider/AuthProvider';
+import { button } from '@material-tailwind/react';
 
 
 const Navber = () => {
+    const { user,logOut,sign} = useContext(AuthContext);
     const [IsOpen,setIsOpen] = useState(false);
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error));
+    }
     return (
         <div className='header'> 
         <div onClick={()=> setIsOpen(!IsOpen)} className='md:hidden'>
@@ -24,9 +33,26 @@ const Navber = () => {
             <Link to='/blog'>Blog</Link>
         </nav>
 
-        <div className="btn mt-1">
+        {/* <div className="btn mt-1">
             <Link className="login-btn" to="/login">Login</Link>
-        </div>
+        </div> */}
+        <div className='flex'>
+                            {
+                                user && <FaUserCircle className='mt-2.5 me-4' style={{ fontSize: '2rem' }}></FaUserCircle>
+                            }
+
+                            {user ?
+                                    <button className='border px-5 py-3 border-orange-400 rounded-2xl hover:bg-orange-400' onClick={handleLogOut} variant="secondary">
+                                        <Link className='text-white text-xl font-semibold'>LogOut</Link>
+                                    </button> :
+                                   <button className='border px-5 py-3 border-orange-400 rounded-2xl hover:bg-orange-400'>
+                                    <Link className='text-white text-xl font-semibold' to="/login">
+                                    Login
+                                </Link>
+                                   </button>
+                                
+                            }
+                        </div>
         </div>
            
         </div>

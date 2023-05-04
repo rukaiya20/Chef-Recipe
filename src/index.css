@@ -25,11 +25,11 @@
 .navbar a:hover{
     color:rgb(255, 158, 97);
 }
-.btn div:hover{
+.btn:hover{
     cursor: pointer;
 }
 
-.btn a{
+.btn {
     color: white;
     padding: 0.6rem 1.5rem;
     border: 1px solid orange;
