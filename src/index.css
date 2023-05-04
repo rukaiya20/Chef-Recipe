@@ -96,3 +96,34 @@
     background: rgb(244, 140, 13);
     border: 1px solid white;
 }
+.quality{
+    padding: 4rem 7%;
+    background-image: linear-gradient(60.34deg, white 52.45%, orange 52.45%);
+}
+.main-quality{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    gap: 15px;
+}
+.main-inner-quality{
+    flex: 1 1 45rem;
+}
+.quality-content{
+    padding: 0 4rem;
+}
+.quality-content h1{
+    color: var(--btn-color);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.quality-content p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.foodQuality {
+    width: 500px;
+    height: 350px;
+}

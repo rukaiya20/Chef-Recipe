@@ -8,6 +8,8 @@ import ChefCard from "../LayOut/Pages/Cards/ChefCard";
 import RecipeCard from "../LayOut/Pages/Cards/RecipeCard";
 import ChefProfile from "../LayOut/Pages/Cards/ChefProfile";
 import PrivateRoute from "./PrivateRoute";
+import About from "../LayOut/Pages/About";
+import FoodQuality from "../LayOut/Pages/FoodQuality";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +19,18 @@ const router = createBrowserRouter([
         {
           path: "/",
          element: <Banner></Banner>,
+        },
+        {
+          path: "/about",
+         element: <About></About>,
+        },
+        {
+          path: "/foodQuality",
+         element: <FoodQuality></FoodQuality>,
+        },
+        {
+          path: "/foodquality",
+         element:<FoodQuality></FoodQuality>,
         },
         {
           path: "/",

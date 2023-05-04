@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdWorkHistory } from "react-icons/md";
 import { AiFillLike } from "react-icons/ai";
 import { GiCook } from "react-icons/gi";
+import About from '../About';
 
 
 const ChefCard = () => {
@@ -18,7 +19,7 @@ const ChefCard = () => {
 
     return (
         <>
-        <h2 className='text-center mt-16 border-b font-black text-4xl'>Our Chefs</h2>
+        <h2 className='text-center mt-16 border-b font-black text-4xl pb-4'>Our Chefs</h2>
         <div className='md:grid md:grid-cols-3 gap-5 mx-12 mt-24 mb-10'>
         {
            chefs.map(chef => <div key={chef.id} chef={chef}>
@@ -52,6 +53,7 @@ const ChefCard = () => {
 
 
        </div>
+       <About></About>
        </>
     );
 };
